@@ -1,25 +1,29 @@
-import { Request, Response, NextFunction } from "express";
-import Notes from "../repositories/index";
+type notesType = {
+  id: string;
+  noteName: string;
+  created: string;
+  category: string;
+  content: string;
+  dates: string;
+};
 
-const removeArchiveNote = async (
-  req: Request,
-  res: Response,
-  next: NextFunction
-) => {
-  try {
-    const note = await Notes.removeArchiveNote(req.params.id);
-    if (note) {
-      return res.json({
-        status: "success",
-        message: "note deleted",
-        code: 204,
-        data: note,
-      });
-    }
-    return res.json({ status: "error", code: 404, message: "Not found" });
-  } catch (e) {
-    next(e);
+import fs from "fs/promises";
+import path from "path";
+
+import getAllArchiveNotes from "./getAllArchiveNotes";
+
+const removeArchiveNote = async (noteId: string) => {
+  const notes = await getAllArchiveNotes();
+  const index = notes.findIndex((note: notesType) => note.id === noteId);
+  if (index !== -1) {
+    const removeNote = notes.splice(index, 1);
+    await fs.writeFile(
+      path.join(__dirname, "../json/archiveNotes.json"),
+      JSON.stringify(notes)
+    );
+    return removeNote;
   }
+  return null;
 };
 
 export default removeArchiveNote;

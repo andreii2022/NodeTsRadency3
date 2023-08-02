@@ -1,26 +1,26 @@
-import express from "express";
-import { Request, Response } from "express";
-import cors from "cors";
-import notesRouter from "../routes/notes/index";
+function dateValidation(content: string) {
+  const regex =
+    /^(0?[1-9]|[12][0-9]|3[01])[\/\-\.\/\\](0?[1-9]|1[012])[\/\-\.\/\\]\d{4}$/;
+  const splittedContent = content.split(/,| /);
+  const arrOfDate = splittedContent.map((el) => el.match(regex));
+  let dates = "";
+  let space = "";
+  arrOfDate.forEach((element) => {
+    if (element !== null) {
+      element.forEach((el) => {
+        if (
+          el !== undefined &&
+          el !== null &&
+          el.length >= 4 &&
+          el.length <= 10
+        ) {
+          dates += space + el;
+          space = ", ";
+        }
+      });
+    }
+  });
+  return dates;
+}
 
-const app = express();
-
-app.use(cors());
-app.use(express.json());
-
-app.use("/notes", notesRouter);
-
-app.use((req, res) => {
-  res.status(404).json({ status: "error", code: 404, message: "Not found" });
-});
-
-app.use(
-  (err: { status: number; message: any }, req: Request, res: Response) => {
-    const status = err.status || 500;
-    res
-      .status(status)
-      .json({ status: "fail", code: status, message: err.message });
-  }
-);
-
-export default app;
+export default dateValidation;
