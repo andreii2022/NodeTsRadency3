@@ -1,0 +1,98 @@
+[
+  {
+    "id": "69b4ae62c551b",
+    "noteName": "new york",
+    "created": "May 20, 2021",
+    "category": "Task",
+    "content": "turism ",
+    "dates": ""
+  },
+  {
+    "id": "03d34f14-4a44-476a-98c8-843c70ba796b",
+    "noteName": "coffy",
+    "created": "May 20, 2021",
+    "category": "Task",
+    "content": "boks",
+    "dates": ""
+  },
+  {
+    "id": "899837fa-ed59-476a-b220-641aba7cc0da",
+    "noteName": "Milk",
+    "created": "May 20, 2021",
+    "category": "Task",
+    "content": "study",
+    "dates": ""
+  },
+  {
+    "id": "2a5e1d20-119c-4583-afd5-f3338d3e3dc4",
+    "noteName": "meet",
+    "category": "Task",
+    "content": "sport",
+    "created": "September 26, 2022",
+    "dates": "10.12.2021, 12.12.2022"
+  },
+  {
+    "id": "352a5cd2-6229-4884-8bf7-45d8ee97d21a",
+    "created": "September 26, 2022",
+    "dates": "",
+    "noteName": "Make a cup of coffy",
+    "category": "Task",
+    "content": "for my best friend"
+  },
+  {
+    "id": "8755cff3-2a9f-41e2-8fbe-e794215c54f3",
+    "created": "friday 26, 2022",
+    "dates": "10.12.2021",
+    "noteName": "coffy",
+    "category": "Task",
+    "content": "for my best friend 10.12.2021"
+  },
+  {
+    "id": "5b061999-2fe9-4840-88e0-4a14a064cac8",
+    "created": "2022",
+    "dates": "10.12.2021, 12.12.2022",
+    "noteName": "Make a cup of coffy",
+    "category": "Task",
+    "content": "for my best friend 10.12.2021 12.12.2022"
+  },
+  {
+    "id": "b42a0db5-ce66-427c-913a-f743d1fb58ba",
+    "created": "September 26, 2022",
+    "dates": "10.12.2021, 12.12.2022",
+    "noteName": "Make a j am",
+    "category": "Task",
+    "content": "for my best friend 10.12.2021 12.12.2022"
+  },
+  {
+    "id": "890e82e3-cd9f-416c-a3a6-c879d79483df",
+    "created": "September 27, 2022",
+    "dates": "20.10.2021",
+    "noteName": "Birthday",
+    "category": "Task",
+    "content": "for my best friend 20.10.2021"
+  },
+  {
+    "id": "3423e363-17f5-459a-9892-31a5a5546439",
+    "created": "September 28, 2022",
+    "dates": "",
+    "noteName": "Radency",
+    "category": "Idea",
+    "content": "world hello"
+  },
+  {
+    "id": "f52f8a9b-43b6-4482-a204-3c4f415f08b5",
+    "noteName": "sport",
+    "created": "September 29, 2022",
+    "category": "Task",
+    "content": "world hello",
+    "dates": ""
+  },
+  {
+    "id": "0d4bdbfa-8eda-4411-8e0e-356350739860",
+    "noteName": "Birthday",
+    "created": "September 29, 2022",
+    "category": "Task",
+    "content": "10/10/2020 20.10.2021",
+    "dates": "10/10/2020, 20.10.2021"
+  }
+]
