@@ -1,7 +1,7 @@
 import express from "express";
 const router = express.Router();
 
-import ctrl from "../../controllers/index";
+import ctrl from "../../controlles/index"
 
 import {
   validationCreateNote,

@@ -1,7 +1,7 @@
 import express from "express";
 import { Request, Response } from "express";
 import cors from "cors";
-import notesRouter from "../routes/notes/index";
+import notesRouter from "./routes/notes/index";
 
 const app = express();
 
@@ -24,3 +24,5 @@ app.use(
 );
 
 export default app;
+
+
