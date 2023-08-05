@@ -1,5 +1,14 @@
 version: '3'
 services:
+  postgres:
+    image: postgres:latest
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: g18Pif18
+      POSTGRES_DB: mydatabase
+
   nodejs-server:
     build: .
     ports:
