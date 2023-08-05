@@ -3,7 +3,7 @@ const { Pool } = require('pg');
 const pool = new Pool({
   user: 'youruser',
   password: 'yourpassword',
-  host: 'postgres', // Це ім'я контейнера PostgreSQL у мережі Docker
+  host: 'postgres',
   database: 'yourdatabase',
   port: 5432,
 });
