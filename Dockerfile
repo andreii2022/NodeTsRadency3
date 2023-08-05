@@ -1,10 +1,20 @@
-FROM node:14.16.1-alpine
-# Adding build tools to make yarn install work on Apple silicon / arm64 machines
 
-WORKDIR /RADENCY-HOMETASK3
-COPY ./package.json .
-RUN npm install
+
+# Використовуємо офіційний образ Node.js
+FROM node:14
+
+# Встановлюємо робочий каталог в контейнері
+WORKDIR /app
+
+# Копіюємо залежності та файли проекту у контейнер
+COPY package*.json ./
 COPY . .
 
-EXPOSE 8083
-CMD npm start
+# Встановлюємо залежності
+RUN npm install
+
+# Відкриваємо порт 3000
+EXPOSE 3000
+
+# Команда для запуску сервера
+CMD ["npm", "start"]
