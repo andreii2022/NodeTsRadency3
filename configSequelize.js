@@ -6,5 +6,6 @@ module.exports = {
     username: 'myuser',
     password: 'g18Pif18',
     database: 'mydatabase',
+    operatorsAliases: false,
   },
 };
